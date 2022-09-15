@@ -1,0 +1,62 @@
+GitHub
+
+Como criar um repositório no GitHub:
+    1. Clicar no botão “+”;
+    2. Selecionar a opção “New repository”;
+    3. Selecionar o template;
+    4. Escolher o dono e o nome;
+    5. Descrever o conteúdo;
+    6. Determinar se ele será Público, Privado ou Interno ( se o dono for uma organização);
+    7. Adicionar um arquivo README.md
+    8. Selecionar arquivos para ignorar o template;
+    9. Escolher uma licença;
+    10. Criar.
+Como enviar um repositório local para o GitHub:
+    1. Usar os comandos: 
+    2. git remote add origin git@github.com:<user name>/<repository name>.git
+    3. git branch -M main
+    4. git push -u origin main
+Como copiar um repositório do GitHub para meu PC:
+    1. Selecionar o repositório;
+    2. Clicar no botão “Code”;
+    3. Selecionar SSH;
+    4. Copiar a URL do repositório;
+    5. Abrir o terminal na pasta que deseja copiar o repositório;
+    6. Entrar o comando: git clone <url-do-repositório>;
+    7. Verifique o resultado usando: git remote -v
+    8. Abra o repositório no VSCode usando: code .
+
+
+
+
+Como enviar alterações no repositório local para o remoto:
+    1. Evite fazer alterações na branch main;
+    2. Crie uma branch: git checkout -b <nome>
+    3. Abra no VSCode: code .
+    4. Faça as alterações
+    5. Verifique quais arquivos foram alterados ou criados, digitando: git status
+    6. Para desfazer alterações em um arquivo, digite: git restore <nome>
+    7. Adicione todos os arquivos modificados ou criado com: git add .
+    8. Ou adicione um arquivo específico utilizando git add <nome>
+    9. Verifique quais arquivos estão em staging com : git status
+    10. Commit: git commit -m “<descrição>”
+    11. Envie as alterações pela primeira vez para o GitHub usando: git push -u origin <nome-da-branch>
+    12. Se já enviou outra vez, utilize daqui pra frente: git push
+
+Como criaruma Pull Request no GitHub:
+    1. Na página do repositório clique na aba “Pull requests”;
+    2. Clique no botão “New pull request”;
+    3. Selecionar as branches (normalmente: main ← branch x);
+    4. Escrever a descrição e comentários;
+    5. Selecionar os revisores;
+    6. Selecionar os responsáveis que irão assinar a requisição;
+    7. Clique no botão “ Create pull request”;
+
+Como revisar uma Pull Request (quando estiver trabalahando em grupo):
+    1. Verificar na aba “Files changed” quais foram as alterações;
+    2. Clique no botão “ Review changes”;
+    3. Selecione uma das opções: “Comment”, “Approve” ou “Request changes”;
+    4. Comente;
+    5. Clique no botão “Submit review”.
+
+
