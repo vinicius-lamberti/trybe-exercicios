@@ -1,0 +1,28 @@
+HTML
+
+criaro arquivo.html
+iniciar a estrutura digitando “!” e selecionando o padrão para inicializar a estrutura básica do html
+Estrutura de uma tag:
+<nomeTag atributo=”valor”>
+	conteúdo da tag
+</nomeTag>
+configurações ficam dentro da tag head
+tudo dentro da tag body é visível para o usuário
+<title>nome da aba</title>  
+<img src=”<caminho ou link do arquivo, ex: ./images/smile.jpg>” alt=”<descrição>” width=”<largura da imagem, ex: 400px>”>
+<h1>título 1</h1> (sendo 1 o maior e 9 o menor)
+<p id=”identificador”>parágrafo</p>
+algumas tags não tem fechamento porque não precisam ou não não tem conteúdo
+<br> pula linha (no css é melhor pra fazer esses espaçamentos)
+<hr> divide as  seções com um linha
+<strong>negrito</strong> 
+<em>itálico</em>
+<!-- comentário -->
+<ul>lista não ordenada
+	<li>tópico</li>
+</ul>
+<ol>lista numerada
+	<li>tópico 1</li>
+</ol>
+âcora/ link:
+<a target=”_blank” href=”url ou #id”> texto clicável </a> (target=”_blank” é um atributo que abre o link em outra aba ou janela, o padrão é target=”_self” que abre na própria aba)
